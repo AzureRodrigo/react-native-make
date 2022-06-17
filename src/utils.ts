@@ -1,10 +1,9 @@
 import { join } from 'path';
 
-import { ANDROID_MAIN_PATH } from './modules/config';
 import { readFile } from './services/file.processing';
 
-const ANDROID_MAIN_MANIFEST_PATH = `${ANDROID_MAIN_PATH}/AndroidManifest.xml`;
-const IOS_PODFILE_PATH = `./ios/Podfile`;
+const ANDROID_MAIN_MANIFEST_PATH = `./packages/mobile/android/app/src/main/AndroidManifest.xml`;
+const IOS_PODFILE_PATH = `./packages/mobile/ios/Podfile`;
 
 //Resort to read file content to fetch package value rather than adding package to parse xml/podfile
 const ANDROID_PACKAGE_EXP = new RegExp(/package=\"(.+)\"/);
