@@ -1,6 +1,6 @@
 {
-  "name": "@azure/react-native-make",
-  "version": "1.0.0",
+  "name": "@azurerodrigo/react-native-make",
+  "version": "1.0.1",
   "main": "modules/index.js",
   "license": "MIT",
   "repository": {
@@ -35,9 +35,12 @@
     "prettier": "1.18.2",
     "release-it": "12.3.6",
     "ts-node": "8.3.0",
-    "typescript": "3.5.3"
+    "typescript": "^4.8.2"
   },
   "rnpm": {
     "plugin": "./react-native.config.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
